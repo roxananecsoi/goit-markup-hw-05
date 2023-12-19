@@ -23,6 +23,17 @@
     <title>Web Studio</title>
   </head>
   <body>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-container">
+        <button class="modal-icon" data-modal-close>
+          <a class="modal-icon-svg" href="">
+            <svg width="8" height="8" class="modal-icon-close">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </a>
+        </button>
+      </div>
+    </div>
     <!-- Header -->
     <header class="header">
       <div class="header-div container">
@@ -71,7 +82,7 @@
           </h1>
         </div>
         <div class="container first-section-div-button">
-          <button class="first-section-button" type="button">
+          <button class="first-section-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -504,5 +515,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
