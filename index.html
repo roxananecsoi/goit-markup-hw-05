@@ -23,17 +23,6 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <div class="modal is-hidden" data-modal>
-      <div class="modal-container">
-        <button class="modal-icon" data-modal-close>
-          <a class="modal-icon-svg" href="">
-            <svg width="8" height="8" class="modal-icon-close">
-              <use href="./images/icons.svg#close"></use>
-            </svg>
-          </a>
-        </button>
-      </div>
-    </div>
     <!-- Header -->
     <header class="header">
       <div class="header-div container">
@@ -76,6 +65,7 @@
     <main>
       <!-- First Section -->
       <section class="first-section">
+        
         <div class="container first-section-div">
           <h1 class="first-section-header">
             Effective Solutions for Your Business
@@ -515,6 +505,17 @@
         </div>
       </div>
     </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-container">
+        <a class="modal-icon-svg" href="">
+        <button class="modal-icon" type="button" data-modal-close>          
+            <svg width="8" height="8" class="modal-icon-close">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </a>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
