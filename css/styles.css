@@ -85,12 +85,6 @@ p {
   border: none;
 }
 
-.modal-icon-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .is-hidden {
   visibility: hidden;
   opacity: 0;
