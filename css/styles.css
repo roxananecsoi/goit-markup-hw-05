@@ -106,8 +106,20 @@ p {
 }
 
 .nav-list:hover,
-.nav-list:focus {
+.nav-list:focus,
+.nav-list:active {
   color: #404bbf;
+}
+
+.nav-list::after {
+  content: "";
+  border-radius: 2px;
+  border-color: #404bbf;
+}
+
+::after {
+  border-radius: 2px;
+  border-color: #404bbf;
 }
 
 .contact {
@@ -128,6 +140,7 @@ p {
 .list-contact:hover,
 .list-contact:focus {
   color: #404bbf;
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .first-section {
@@ -180,6 +193,7 @@ p {
 .first-section-button:hover,
 .first-section-button:focus {
   background-color: #404bbf;
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .first-section-header {
@@ -386,6 +400,7 @@ p {
 .fourth-section-icon:hover,
 .fourth-section-icon:focus {
   background-color: #404bbf;
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .fourth-section-icon-media {
@@ -484,6 +499,7 @@ p {
 .social-media-icon:hover,
 .social-media-icon:focus {
   background-color: #31d0aa;
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .footer-icon .social-media-icon .media-icon-svg {
@@ -512,6 +528,7 @@ p {
   border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .name-app {
@@ -611,6 +628,7 @@ p {
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .portfolio-list-div {
@@ -652,6 +670,7 @@ p {
 .fifth-section-icon:focus {
   border-color: #404bbf;
   color: #404bbf;
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 
 .fifth-section-header {
@@ -681,7 +700,7 @@ p {
   height: 200px;
 }
 
-.overlay-div {
+.overlay-container {
   position: relative;
   width: 360px;
   height: 300px;
@@ -691,6 +710,8 @@ p {
 
 .overlay-paragraph {
   position: absolute;
+  top: 0;
+  left: 0;
   color: #f4f4fd;
   font-family: Roboto;
   font-size: 16px;
@@ -702,11 +723,16 @@ p {
   height: 100%;
   background-color: #4d5ae5;
 
-  transform: translatey(100%);
+  transform: translateY(100%);
   transition: transform 250ms ease-in-out;
 }
 
-.overlay-div:hover .overlay-paragraph,
-.overlay-div:focus .overlay-paragraph {
-  transform: translatey(0);
+.overlay-container:hover .overlay-paragraph {
+  transform: translateY(0%);
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+}
+
+.overlay-container:focus .overlay-paragraph {
+  transform: translateY(0%);
+  transition: box-shadow 250 ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
