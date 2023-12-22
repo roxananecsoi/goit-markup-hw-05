@@ -373,6 +373,7 @@ button {
   letter-spacing: 0.32px;
   color: #434455;
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .fourth-section {
@@ -594,6 +595,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  color: #434455;
 }
 
 /*tema3*/
