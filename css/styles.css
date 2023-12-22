@@ -67,11 +67,10 @@ p {
   stroke: rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   border-radius: 50%;
-
   position: absolute;
   top: 24px;
   right: 24px;
-  border: 1px solid rgba(0, 0, 0, 0, 0.1);
+  margin: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
   transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -100,8 +99,6 @@ p {
 .modal .modal-icon .modal-icon-close:hover,
 .modal .modal-icon .modal-icon-close:focus {
   fill: #ffffff;
-  /* transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .logo {
@@ -147,20 +144,11 @@ p {
   /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.nav-list-studio::after {
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  display: block;
-  background-color: #404bbf;
-  content: "";
-  border-radius: 2px;
-  border-color: #404bbf;
+.nav-list-active {
+  color: #404bbf;
 }
 
-.nav-list-portfolio::after {
+.nav-list-active::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -573,9 +561,9 @@ p {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -681,7 +669,7 @@ p {
 }
 
 .portfolio-list-item .portfolio-link {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item .portfolio-link:hover,
@@ -783,7 +771,7 @@ p {
   height: 100%;
   background-color: #4d5ae5;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-container:hover .overlay-paragraph {
