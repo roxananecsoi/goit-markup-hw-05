@@ -365,6 +365,7 @@ button {
   color: #2e2f42;
   margin-bottom: 8px;
   text-align: center;
+  margin-top: 10px;
 }
 
 .fourth-section-paragraph {
@@ -373,7 +374,7 @@ button {
   letter-spacing: 0.32px;
   color: #434455;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .fourth-section {
