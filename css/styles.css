@@ -81,8 +81,8 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover .modal-container,
-.modal-icon:focus .modal-container {
+.modal-container .modal-icon:hover,
+.modal-container .modal-icon:focus {
   background-color: #404bbf;
   border: none;
   /* transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1),
